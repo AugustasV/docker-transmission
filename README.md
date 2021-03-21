@@ -61,13 +61,13 @@ The architectures supported by this image are:
 
 Here are some example snippets to help you get started creating a container.
 
-### docker-compose ([recommended](https://docs.linuxserver.io/general/docker-compose))
+### docker-compose ([recommended(https://docs.linuxserver.io/general/docker-compose))
 
 Compatible with docker-compose v2 schemas.
 
 ```yaml
 ---
-version: "2.1"
+version: "2"
 services:
   transmission:
     image: ghcr.io/linuxserver/transmission
@@ -89,7 +89,7 @@ services:
       - 9091:9091
       - 51413:51413
       - 51413:51413/udp
-    restart: unless-stopped
+    restart: always
 ```
 
 ### docker cli
