@@ -67,7 +67,7 @@ Compatible with docker-compose v2 schemas.
 
 ```yaml
 ---
-version: "2.1"
+version: "2"
 services:
   transmission:
     image: ghcr.io/linuxserver/transmission
@@ -89,7 +89,7 @@ services:
       - 9091:9091
       - 51413:51413
       - 51413:51413/udp
-    restart: unless-stopped
+    restart: always
 ```
 
 ### docker cli
